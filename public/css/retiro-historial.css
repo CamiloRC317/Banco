@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f1e8;
+    color: #2b2118;
+}
+
+#tarjeta-historial-retiros {
+    width: 100%;
+    max-width: 560px;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(154, 91, 19, 0.15);
+}
+
+.cabecera {
+    padding: 28px 32px;
+    background: #9a5b13;
+    color: #ffffff;
+}
+
+.cabecera h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+}
+
+.cabecera p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.contenido {
+    padding: 24px 32px 32px;
+}
+
+.tabla {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.tabla th {
+    padding: 10px;
+    background: #f7f1e8;
+    text-align: left;
+    font-size: 14px;
+    color: #7a4810;
+}
+
+.tabla td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee5d8;
+    font-size: 15px;
+}
+
+.tabla tbody tr:hover {
+    background: #fbf8f3;
+}
+
+.columna-valor {
+    text-align: right;
+    font-weight: bold;
+}
+
+.mensaje-vacio {
+    margin: 0 0 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f7f1e8;
+    text-align: center;
+    color: #7a4810;
+    font-size: 15px;
+}
+
+.enlace-volver {
+    display: block;
+    text-align: center;
+    color: #9a5b13;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.enlace-volver:hover {
+    text-decoration: underline;
+}
