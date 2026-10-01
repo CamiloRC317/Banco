@@ -1,4 +1,5 @@
 <?php 
+declare(strict_types=1);
 namespace App\Nucleo;
 class Router{
     protected array $rutas = [];

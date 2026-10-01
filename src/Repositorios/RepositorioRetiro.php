@@ -1,4 +1,5 @@
 <?php 
+declare(strict_types=1);
 namespace App\Repositorios;
 use App\Modelos\Retiro;
 use App\Nucleo\Conexion;
