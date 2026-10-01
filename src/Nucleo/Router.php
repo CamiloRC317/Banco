@@ -30,20 +30,17 @@ class Router{
                 return;
             }
         }
-        http_response_code(404);
         echo "404 - Ruta no encontrada: {$method} {$uri}";
     }
     public function ejecutar(string $controller) : void{
         [$nombre_clase,$accion] = explode("@",$controller);
         $clase_completo = "App\\Controladores\\{$nombre_clase}";
         if(!class_exists($clase_completo)){
-            http_response_code(500);
             echo "No existe el controlador: {$clase_completo}";
             return;
         }
         $instancia = new $clase_completo();
         if(!method_exists($instancia,$accion)){
-            http_response_code(500);
             echo "El controlador {$nombre_clase} no tiene el método {$accion}()";
             return;
         }
