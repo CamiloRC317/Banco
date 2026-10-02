@@ -20,6 +20,8 @@
 
             <form action="/retiros" method="POST" id="formulario-retiro">
                 <div class="campo">
+                    <label for="valor">Digite la contraseña</label>
+                    <input class="entrada" id="valor" type="password" name="contrasena" required>
                     <label for="valor">Valor a retirar</label>
                     <input class="entrada" type="number" id="valor" name="valor" step="0.01" min="0.01" required>
                 </div>

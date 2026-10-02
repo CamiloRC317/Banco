@@ -7,6 +7,7 @@ use App\Servicios\Excepciones\CuentaNoEncontradaException;
 use App\Servicios\ServicioCuenta;
 use App\Servicios\Excepciones\SaldoInsuficienteException;
 use App\Servicios\Excepciones\CuentaDestinoNoValidaException;
+use App\Servicios\Excepciones\ContrasenaIncorrecta;
 
 class ControladorTransferencia extends ControladorBase{
     private ServicioCuenta $servicioCuenta;
@@ -25,9 +26,10 @@ class ControladorTransferencia extends ControladorBase{
         $cuenta_id = $_SESSION['cuenta_id'];
         $valor = (float) $_POST['valor'];
         $numero_cuenta_destino = $_POST['numero_cuenta_destino'];
+        $contrasena = $_POST['contrasena'];
 
         try {
-            $this->servicioCuenta->transferencia($cuenta_id,$numero_cuenta_destino,$valor);
+            $this->servicioCuenta->transferencia($cuenta_id,$numero_cuenta_destino,$valor,$contrasena);
             header("Location: /");
             exit;
         } catch (CuentaNoEncontradaException $e) {
@@ -36,6 +38,8 @@ class ControladorTransferencia extends ControladorBase{
             $this->renderizar('transferencia/formulario', ['error' => 'Saldo insuficiente para esta transferencia']);
         }catch (CuentaDestinoNoValidaException $e){
             $this->renderizar('transferencia/formulario', ['error' => 'No se puede enviar a su misma cuenta']);
+        }catch (ContrasenaIncorrecta $e){
+            $this->renderizar('transferencia/formulario', ['error' => 'Contraseña incorrecta']);
         }
     }
     public function historial():void{

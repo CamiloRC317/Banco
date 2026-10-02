@@ -20,6 +20,10 @@
 
             <form action="/transferencias" method="POST" id="formulario-transferencia">
                 <div class="campo">
+                    <label for="valor">Digite la contraseña</label>
+                    <input class="entrada" id="valor" type="password" name="contrasena" required>
+                </div>
+                <div class="campo">
                     <label for="numero_cuenta_destino">Número de cuenta destino</label>
                     <input class="entrada" type="text" id="numero_cuenta_destino" name="numero_cuenta_destino" required>
                 </div>
