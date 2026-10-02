@@ -6,6 +6,7 @@ use App\Repositorios\RepositorioRetiro;
 use App\Repositorios\RepositorioTransferencia;
 use App\Servicios\Excepciones\CuentaNoEncontradaException;
 use App\Servicios\Excepciones\SaldoInsuficienteException;
+use App\Servicios\Excepciones\CuentaDestinoNoValidaException;
 use App\Nucleo\Conexion;
 use Exception;
 use PDO;
@@ -45,6 +46,9 @@ class ServicioCuenta{
 
             if($cuenta_origen->getSaldo()<$saldo_transferir){
                 throw new SaldoInsuficienteException();
+            }
+            if($cuenta_origen == $cuenta_destino){
+                throw new CuentaDestinoNoValidaException();
             }
             $saldo_origen = $cuenta_origen->getSaldo()-$saldo_transferir;
             $saldo_destino = $cuenta_destino->getSaldo()+$saldo_transferir;

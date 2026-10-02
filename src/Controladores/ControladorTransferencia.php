@@ -6,6 +6,7 @@ use App\Nucleo\ControladorBase;
 use App\Servicios\Excepciones\CuentaNoEncontradaException;
 use App\Servicios\ServicioCuenta;
 use App\Servicios\Excepciones\SaldoInsuficienteException;
+use App\Servicios\Excepciones\CuentaDestinoNoValidaException;
 
 class ControladorTransferencia extends ControladorBase{
     private ServicioCuenta $servicioCuenta;
@@ -33,6 +34,8 @@ class ControladorTransferencia extends ControladorBase{
             $this->renderizar('transferencia/formulario', ['error' => 'Cuenta destino no encontrada']);
         } catch (SaldoInsuficienteException $e) {
             $this->renderizar('transferencia/formulario', ['error' => 'Saldo insuficiente para esta transferencia']);
+        }catch (CuentaDestinoNoValidaException $e){
+            $this->renderizar('transferencia/formulario', ['error' => 'No se puede enviar a su misma cuenta']);
         }
     }
     public function historial():void{
