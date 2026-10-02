@@ -10,8 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eaf0f6;
-    color: #16222e;
+    background: #eef4fb;
+    color: #1e2f3f;
 }
 
 #tarjeta-transferencia {
@@ -20,12 +20,12 @@ body {
     background: #ffffff;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(30, 78, 121, 0.15);
+    box-shadow: 0 6px 20px rgba(31, 95, 139, 0.15);
 }
 
 .cabecera {
     padding: 28px 32px;
-    background: #1e4e79;
+    background: #1f5f8b;
     color: #ffffff;
 }
 
@@ -59,14 +59,14 @@ body {
 .entrada {
     width: 100%;
     padding: 11px 12px;
-    border: 1px solid #c8d3df;
+    border: 1px solid #cbd9e6;
     border-radius: 8px;
     font-size: 15px;
 }
 
 .entrada:focus {
-    outline: 2px solid #1e4e79;
-    border-color: #1e4e79;
+    outline: 2px solid #1f5f8b;
+    border-color: #1f5f8b;
 }
 
 .boton {
@@ -74,22 +74,22 @@ body {
     padding: 12px;
     border: none;
     border-radius: 8px;
-    background: #1e4e79;
+    background: #1f5f8b;
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
 }
 
 .boton:hover {
-    background: #163a5c;
+    background: #17496b;
 }
 
 .mensaje-error {
     margin: 0 0 18px;
     padding: 10px 12px;
     border-radius: 8px;
-    background: #fdecea;
-    color: #b42318;
+    background: #e7f0f8;
+    color: #245b82;
     font-size: 14px;
 }
 
@@ -97,7 +97,7 @@ body {
     display: block;
     margin-top: 18px;
     text-align: center;
-    color: #1e4e79;
+    color: #1f5f8b;
     font-size: 14px;
     text-decoration: none;
 }

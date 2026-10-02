@@ -10,8 +10,8 @@ body {
     justify-content: center;
     align-items: flex-start;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f7f1e8;
-    color: #2b2118;
+    background: #eef4fb;
+    color: #1e2f3f;
 }
 
 #tarjeta-historial-retiros {
@@ -20,12 +20,12 @@ body {
     background: #ffffff;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(154, 91, 19, 0.15);
+    box-shadow: 0 6px 20px rgba(31, 95, 139, 0.15);
 }
 
 .cabecera {
     padding: 28px 32px;
-    background: #9a5b13;
+    background: #1f5f8b;
     color: #ffffff;
 }
 
@@ -53,20 +53,20 @@ body {
 
 .tabla th {
     padding: 10px;
-    background: #f7f1e8;
+    background: #eef4fb;
     text-align: left;
     font-size: 14px;
-    color: #7a4810;
+    color: #17496b;
 }
 
 .tabla td {
     padding: 12px 10px;
-    border-bottom: 1px solid #eee5d8;
+    border-bottom: 1px solid #d9e4ee;
     font-size: 15px;
 }
 
 .tabla tbody tr:hover {
-    background: #fbf8f3;
+    background: #f7fafd;
 }
 
 .columna-valor {
@@ -78,16 +78,16 @@ body {
     margin: 0 0 20px;
     padding: 20px;
     border-radius: 8px;
-    background: #f7f1e8;
+    background: #eef4fb;
     text-align: center;
-    color: #7a4810;
+    color: #17496b;
     font-size: 15px;
 }
 
 .enlace-volver {
     display: block;
     text-align: center;
-    color: #9a5b13;
+    color: #1f5f8b;
     font-size: 14px;
     text-decoration: none;
 }

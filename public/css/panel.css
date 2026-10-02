@@ -10,8 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eef3f0;
-    color: #1d2b2a;
+    background: #eef4fb;
+    color: #1e2f3f;
 }
 
 #tarjeta-panel {
@@ -20,12 +20,12 @@ body {
     background: #ffffff;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(14, 90, 79, 0.15);
+    box-shadow: 0 6px 20px rgba(31, 95, 139, 0.15);
 }
 
 .cabecera {
     padding: 28px 32px;
-    background: #0e5a4f;
+    background: #1f5f8b;
     color: #ffffff;
 }
 
@@ -48,7 +48,7 @@ body {
 .etiqueta-saldo {
     margin: 0;
     font-size: 14px;
-    color: #5b6b68;
+    color: #536b7d;
 }
 
 .saldo {
@@ -56,7 +56,7 @@ body {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 40px;
     font-weight: bold;
-    color: #0e5a4f;
+    color: #1f5f8b;
 }
 
 .menu {
@@ -69,31 +69,31 @@ body {
 .opcion {
     display: block;
     padding: 16px 12px;
-    border: 1px solid #d5e0dc;
+    border: 1px solid #cbd9e6;
     border-radius: 10px;
-    background: #f6f9f8;
-    color: #0e5a4f;
+    background: #f4f8fc;
+    color: #1f5f8b;
     text-align: center;
     text-decoration: none;
     font-size: 15px;
 }
 
 .opcion:hover {
-    background: #e2efeb;
-    border-color: #0e5a4f;
+    background: #e3eef7;
+    border-color: #1f5f8b;
 }
 
 .boton-secundario {
     width: 100%;
     padding: 12px;
-    border: 1px solid #cbd5d1;
+    border: 1px solid #cbd9e6;
     border-radius: 8px;
     background: #ffffff;
-    color: #5b6b68;
+    color: #536b7d;
     font-size: 15px;
     cursor: pointer;
 }
 
 .boton-secundario:hover {
-    background: #f1f4f3;
+    background: #f4f8fc;
 }
